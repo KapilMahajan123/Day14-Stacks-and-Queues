@@ -13,6 +13,10 @@ public class Stack {
 	public void push(Object data) {
 		list.addLast(data);
 	}
+	//Pop method
+	public void pop() {
+		list.deleteFirst();
+	}
 	//Display method
 	public void display() {
 		list.display();
@@ -25,5 +29,12 @@ public class Stack {
 		stack.push(30);
 		stack.push(70);
 		stack.display();
+		stack.pop();
+		stack.display();
+		stack.pop();
+		stack.display();
+		stack.pop();
+		stack.display();
+
 	}
 }

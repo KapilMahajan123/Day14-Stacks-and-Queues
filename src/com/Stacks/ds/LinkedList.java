@@ -22,6 +22,8 @@ public class LinkedList {
 	}
 	/*
 	 * Adding to linked list
+	 * if the linked list empty
+	 * then make the new node as head
 	 */
 	public void addLast(Object data) {
 		Node newNode = new Node(data);
@@ -36,6 +38,10 @@ public class LinkedList {
 			}
 			temp.ref = newNode;
 		}
+	}
+	//Delete position
+	public void deleteFirst() {
+		head = head.ref;
 	}
 	/*
 	 * Display position
